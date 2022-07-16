@@ -94,7 +94,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 /* Section hero */
-.section__hero{
+.section{
   width: 1440px;
   height: 900px;
   margin: 0 auto;
@@ -230,4 +230,74 @@ h1,h2,h3,h4,h5,h6{
   transform: rotate(-45deg);
   right: 30%;
   top: 50%;
+}
+
+
+/* open tab */
+
+.container--opentab{
+  text-align: center;
+  background: #A8FF35;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  height: 742px;
+  position: relative;
+
+}
+.opentab__title{
+  font-size: 62px;
+  font-weight: 700;
+  font-family: var(--bold-font-family);
+  color: black;
+}
+.opentab__text{
+  font-size: 18px;
+  font-family: var(--text-font-family);
+  font-weight: 400;
+  margin: 0 250px;
+  line-height: 1.6;
+}
+.btn__cos__item.findtrend{
+  position: static;
+  align-items: center;
+  overflow: hidden;
+  width: 350px;
+  background-color: #030303;
+  box-shadow:none;
+  margin: 60px 80px;
+}
+.soc__closer.findtrend{
+  width: 70px;
+  height: 100px;  
+  margin-left: -50px;
+  background: linear-gradient(270deg, #030303 53.65%, rgba(3, 3, 3, 0.6) 100%);
+}
+.opentab{
+  background-color: white;
+  border-radius: 16px;
+  margin: 60px 0;
+}
+.opentab::before{
+  content: "";
+  display: block;
+  background: url(../img/hero/opentab1.svg) no-repeat center;
+  width: 100px;
+  height: 70px;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translateY(-50%);
+}
+.opentab::after {
+  content: "";
+  display: block;
+  background: url(../img/hero/opentab2.svg) no-repeat center;
+  width: 100px;
+  height: 70px;
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  transform: translateY(-50%);
 }
