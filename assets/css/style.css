@@ -378,8 +378,9 @@ h1,h2,h3,h4,h5,h6{
   justify-content: center;
 }
 .brands__item img{
-  height: auto;
-  width: 60%;
+  height: 40%;
+  width:70%;
+  margin-top: 15%;
 }
 
 
